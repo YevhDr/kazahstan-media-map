@@ -13,7 +13,7 @@ body {
   #map svg text {
     font-family: 'Fira Sans Condensed', sans-serif;
     pointer-events: none;
-    font-weight: 400; }
+    font-weight: 500; }
   #map svg .st7 {
     font-style: italic; }
 
