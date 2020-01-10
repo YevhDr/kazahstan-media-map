@@ -6,9 +6,9 @@ body {
   background-color: #00CBCC; }
 
 #map {
-  margin-top: 5vh;
-  width: 100%;
-  z-index: 0; }
+  width: 70%;
+  z-index: 0;
+  margin: 5vh auto auto auto; }
   #map svg text {
     pointer-events: none; }
 
