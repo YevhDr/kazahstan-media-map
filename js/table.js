@@ -126,13 +126,7 @@ d3.csv("data/media_dataset.csv", function (error, data) {
      };
     
     drawT(data);
-
-    // var updateTable = function(){
-    //     var regionData = data.filter(function(d){return d["ОБЛАСТЬ"] === selectedRegion });
-    //     $("#example_wrapper").remove();
-    //     drawT(regionData)
-    // };
-
+   
     // d3.json("data/kazakhstan_QGIS.geojson", function (geodata) {
     
         d3.xml("img/map_alone.svg").mimeType("image/svg+xml").get(function (error, xml) {
@@ -157,17 +151,6 @@ d3.csv("data/media_dataset.csv", function (error, data) {
     
     
             d3.selectAll('.region-chart')
-                .on("mouseover", function (d) {
-                    d3.select(this).style('cursor', 'pointer');
-                    //d3.selectAll(".region-chart").style('fill', 'white').style('opacity', '0.7');
-                    //d3.select(this).style('fill', 'white').style('opacity', '1');
-                })
-                // .on('mouseout', function (d) {
-                //     d3.select(this).style('cursor', 'default');
-                //     d3.select(this).style('fill', 'white');
-                //     d3.select(this).style('opacity', '0.7');
-                //
-                // })
                 .on("click", function(d){
                     d3.selectAll(".region-chart").style('fill', 'white').style('opacity', '0.7');
                     d3.select(this).style('fill', 'white').style('opacity', '1');
@@ -193,7 +176,6 @@ d3.csv("data/media_dataset.csv", function (error, data) {
 
 
 
-// });
 
 
 
