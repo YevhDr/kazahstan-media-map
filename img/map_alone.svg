@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   height="100%"
+   width="100%"
+   viewBox="0 0 943.8 529.8"
+   xml:space="preserve"
+   sodipodi:docname="map_alone.svg"
+   inkscape:version="0.92.4 (unknown)"><metadata
+   id="metadata125"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs123" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1859"
+   inkscape:window-height="1056"
+   id="namedview121"
+   showgrid="false"
+   inkscape:zoom="1.343505"
+   inkscape:cx="355.63667"
+   inkscape:cy="235.88487"
+   inkscape:window-x="61"
+   inkscape:window-y="24"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#00CBCC;}
+	.st1{opacity:0.7;fill:#FFFFFF;}
+	.st2{opacity:0.7;fill:#FFFFFF;stroke:#00CBCC;stroke-width:3;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;}
+	.st5{font-family:'FiraSansCondensed-Book';}
+	.st6{font-size:11.4658px;}
+	.st7{font-family:'FiraSansCondensed-BookItalic';}
+</style>
+<rect
+   x="-4.6"
+   y="-6.5"
+   class="st0"
+   width="953"
+   height="542"
+   id="rect4" />
+<path
+   class="st1"
+   d="M607.1,144.7l-13.2-3.9l-9.6-11.1l-18.9,3.2l-5.2-13.9l-20.8,0.7l-12.5-10.4l-19.2,1.4l-1.3,17.9l-13.2,16.9  l-21.1,4.5l-18.2-6.3l-0.2,0.9L442,165.3l1.2,23.4l7.5,1.5l28.9,12.6l22.3-2.7l9,12.4l22.5,7.2l9.3-1.3l14.9-17.1l9.5,8.3l11.6-3.4  l5.3-10l17.7-14.9l8-25.4L607.1,144.7z M539.4,202.5h-2v7l-7-2v-3l-5-2l-1-8l4-2h2l4-4l3,4l-2,3l1,5h4L539.4,202.5z"
+   id="path6"><title
+     id="title870">Акмолинская область</title></path>
+<polygon
+   class="st2 region"
+   points="535.4,195.5 537.4,192.5 534.4,188.5 530.4,192.5 528.4,192.5 524.4,194.5 525.4,202.5 530.4,204.5   530.4,207.5 537.4,209.5 537.4,202.5 539.4,202.5 540.4,200.5 536.4,200.5 "
+   id="polygon8"><title
+     id="title896">Нур-Султан</title></polygon>
+<polygon
+   class="st1 region"
+   points="252.4,332.4 249.8,328.9 232.3,311.3 232.5,280.4 231.3,268.2 227.9,263.5 221.6,267.4 214.3,264   210.3,253.6 202.9,252 198.6,259.1 182.4,274.2 169.1,265.7 124.9,288.8 82.5,283.7 82,288 88.9,295.3 104.5,297.5 116.7,317.6   112.9,323.7 113.3,329.4 134.8,339.6 145.9,324.3 163.4,323.5 198.2,330.3 196.7,335.6 216.2,335.6 "
+   id="polygon10"><title
+     id="title882">Атырауская область</title></polygon>
+<polygon
+   class="st1 region"
+   points="254.8,335.5 216.3,338.9 195.7,338.9 194.9,341.7 188.1,360.1 167.2,363.4 160.1,373.7 162.6,380.1   144.4,387.8 173.3,428.4 189.8,435.4 187.7,460.4 194.2,454.6 222.2,444.6 244.8,474.1 257,472.2 257,373.3 266.2,370.4   261.6,342.8 "
+   id="polygon12"><title
+     id="title880">Мангистауская область</title></polygon>
+<path
+   class="st1 region"
+   d="M535.5,435.2l-3.5-11.8l-10.3-6.9l3.7-21.8l-13.5-46.9l-35.3-0.4l1.5,5.1v14.9l6.8,28l8.5,7.3l-9.2,23.3  l-26.7,22.4l0,0.2l8.8,30.7l22.3-2.6l-0.7,9.1l15.1,5.8l0.6-3.9l12.7-18.9l30.1-18.5L535.5,435.2z M519.4,452.5l-2,1l1,2l-2,1l-2-1  l-3,3l-4.3-3.5l-1.7-5.5l4-4l6,1l6,6H519.4z"
+   id="path14"><title
+     id="title900">Туркестанская область</title></path>
+<polygon
+   class="st2"
+   points="509.4,445.5 505.4,449.5 507.1,455 511.4,458.5 514.4,455.5 516.4,456.5 518.4,455.5 517.4,453.5   519.4,452.5 521.4,452.5 515.4,446.5 "
+   id="polygon16"><title
+     id="title902">Шымкент</title></polygon>
+<polygon
+   class="st1"
+   points="169.3,261.9 182.1,270.1 196.1,257.1 206.6,239.4 222.1,235.7 224.2,197.3 173.3,173.2 116.1,209.9   116.6,229.8 105,232.3 89,217.4 70.8,267.6 67.4,275.7 83,280.1 82.9,280.4 124.3,285.4 "
+   id="polygon18"><title
+     id="title878">Западно-Казахстанская область</title></polygon>
+<polygon
+   class="st1 region"
+   points="339.9,315.7 359.2,290.7 373.4,289.6 390.2,309.7 414.7,289.9 410,283.4 393.1,265.5 381.3,252.6   377.3,237.1 386.4,227.8 376.3,202.2 375.3,196.7 366.1,192.1 365.1,206.5 336.3,202.1 323.4,204.3 301.4,193.1 282.2,193.6   252.5,210.1 227.4,198.8 225.2,238.2 208.7,242.2 204.7,249 212.7,250.8 216.8,261.6 221.4,263.7 228.7,259.1 234.4,267   235.7,280.3 235.5,309.9 252.3,326.9 256.7,332.8 264.7,341.3 269.3,369.4 303.2,358.6 302.2,357.7 "
+   id="polygon20"><title
+     id="title872">Актюбинская область</title></polygon>
+<polygon
+   class="st1 region"
+   points="458,126.6 454.6,140.5 472.2,146.6 491.3,142.5 503.1,127.3 504.5,107.6 527.8,105.9 540.4,116.3   562.3,115.6 567.4,129.2 585.4,126.2 595.7,137.9 606.2,141 605.1,136.1 598.4,116.7 599.9,115.2 602.5,99.1 574.2,89.5 557.4,95   549.2,61.7 510.5,53.6 496.4,66.1 456.1,79.2 457,93.9 "
+   id="polygon22"><title
+     id="title894">Северо-Казахстанская область</title></polygon>
+<polygon
+   class="st1 region"
+   points="613.1,156.1 604.7,182.4 609.6,202.7 623.7,202.7 631.1,220.6 658.8,215 672.2,204.2 684.6,217.1   694.1,221.8 702.8,220.7 704.9,209.5 692.2,194.9 715.5,178.5 686.1,124.4 660.5,95.8 666.2,86.1 657.9,86.1 612.6,114.9   602.3,117.9 608.2,135.3 "
+   id="polygon24"><title
+     id="title874">Павлодарская область</title></polygon>
+<polygon
+   class="st1 region"
+   points="489.5,403.7 482,397.2 474.8,367.6 474.8,353 471.9,342.9 444.6,341.8 389,313.3 372,293 360.9,293.8   342.4,317.8 306.9,357.4 308.3,356.9 311.5,358.6 325.2,367.1 327.1,362.5 329.8,357.9 335.2,373.3 374.6,414.3 393.6,411.5   429.3,409.5 454.9,431.6 456.9,444.7 481.4,424 "
+   id="polygon26"><title
+     id="title898">Кызылординская область</title></polygon>
+<polygon
+   class="st1 region"
+   points="378.2,194.5 379.5,201.4 390.1,228.6 380.9,238.1 384.3,251 395.4,263.3 410.3,279 410.4,278.3   423.8,257.1 437.1,259.3 452,252.6 487.4,210.2 484.8,205.9 485.8,205.3 479,206.1 449.4,193.2 440,191.4 438.7,164.6 450.5,143.3   454.8,126.2 453.7,94 452.9,80.2 431.7,87.1 359.5,100 353.1,112.1 365.6,133.6 349.6,141.8 350.1,155.4 331.6,169.6 364.4,189.3   365.1,188 "
+   id="polygon28"><title
+     id="title888">Костанайская область</title></polygon>
+<polygon
+   class="st1 region"
+   points="635,397.9 618.2,380.9 606.6,361.7 606.6,347 515.2,347.8 528.7,394.5 525.3,415 534.8,421.3   538.4,433.7 548.9,448.2 554.2,438.1 565.9,432.5 596.4,442.1 599.4,430.1 613.8,422.4 639.2,432.6 644.2,431.9 634.1,413.5 "
+   id="polygon30"><title
+     id="title890">Жамбылская область</title></polygon>
+<polygon
+   class="st3 region"
+   points="664.7,306.2 669.7,279.4 668.1,256.6 658.2,246.4 681.5,218.5 671.9,208.6 660.3,218 629.1,224.4   621.5,206 607,206 602.1,185.3 586.5,198.4 580.8,209 566.2,213.3 557.8,205.9 544.3,221.4 533,222.9 508.8,215.2 500.2,203.5   488.1,205 491.4,210.5 454.1,255.3 437.5,262.6 425.4,260.7 413.5,279.5 413,282 419.2,290.4 393,311.7 445.5,338.6 474.3,339.8   475.6,344.2 513.1,344.6 607.7,343.7 627,327.9 648.7,324.4 669.7,328.9 679.1,323.2 679.1,313.4 667.5,314.9 "
+   id="polygon32"
+   style="fill:#b3f0f0;fill-opacity:1"><title
+     id="title884">Карагандинская область</title></polygon>
+<polygon
+   class="st1 region"
+   points="870.4,251.6 856.8,239.7 831.8,236.3 813.5,221 793.3,197.4 756,202.4 749.7,193.7 739.9,190.4   728.6,202.8 717.6,182.4 717,181.3 697,195.5 708.4,208.6 705.5,223.7 693.5,225.1 684.1,220.4 662.6,246.2 671.3,255.2   672.9,279.6 672.9,279.8 668.1,306 669.8,311.3 678.9,310.1 679.1,311.6 679.1,309.8 701.5,310.9 716.3,318.2 734.7,321.2   759.4,332.5 772.5,350.4 773.1,346.8 789.6,310.8 822.8,319.6 838.4,306.1 838.3,275.7 859.8,267 "
+   id="polygon34"><title
+     id="title886">Восточно-Казахстанская область</title></polygon>
+<rect
+   x="448.5"
+   y="74.4"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect36" />
+<text
+   transform="matrix(1 0 0 1 486.5849 83.0016)"
+   id="text42"><tspan
+     x="0"
+     y="0"
+     class="st5 st6"
+     id="tspan38">Северо-</tspan><tspan
+     x="-15.6"
+     y="13.8"
+     class="st5 st6"
+     id="tspan40">Казахстанская</tspan></text>
+
+
+<rect
+   x="334.2"
+   y="162.4"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect44" />
+<text
+   transform="matrix(1 0 0 1 358.4038 170.9269)"
+   class="st5 st6"
+   id="text46">Костанайская</text>
+
+
+<rect
+   x="444.2"
+   y="380.2"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect48" />
+<text
+   transform="matrix(1 0 0 1 466.6797 388.7526)"
+   class="st5 st6"
+   id="text50">Туркестанская</text>
+
+
+<rect
+   x="468.2"
+   y="153.3"
+   class="st4"
+   width="115.3"
+   height="11.1"
+   id="rect52" />
+<text
+   transform="matrix(1 0 0 1 493.75 161.883)"
+   class="st5 st6"
+   id="text54">Акмолинская</text>
+
+
+<rect
+   x="485.5"
+   y="176.5"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect56" />
+<text
+   transform="matrix(1 0 0 1 513.3174 185.0871)"
+   class="st7 st6"
+   id="text58">Нур-Султан</text>
+
+
+<path
+   class="st1"
+   d="M771.7,355l0-0.2l-14.5-19.7l-23.5-10.8l-18.4-3l-14.7-7.1l-18.3-1v11.9l-12.1,7.2l-21.6-4.6l-20.2,3.3  l-18.5,15.1v14.7l11,18.2l17.5,17.6l-1,16.1l10.3,18.7l19.4-2.7l35.7,6.2l29.5,13.3l8.6-29.1l-6.8-36.7l-8.9-6.1l34-9.1l15.1,1  l3.6-4.4L771.7,355z M685.4,419.5l-4,4l-3,1l-4-2l-2-3v-5l2-4l4-1l3,2l3-2l1,1l-1,3l2,3h2l1,3H685.4z"
+   id="path60"><title
+     id="title892">Алматинская область</title></path>
+<polygon
+   class="st2"
+   points="686.4,416.5 684.4,413.5 685.4,410.5 684.4,409.5 681.4,411.5 678.4,409.5 674.4,410.5 672.4,414.5   672.4,419.5 674.4,422.5 678.4,424.5 681.4,423.5 685.4,419.5 689.4,419.5 688.4,416.5 "
+   id="polygon62"><title
+     id="title876">Алматы</title></polygon>
+<rect
+   x="621.6"
+   y="394.8"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect64" />
+<text
+   transform="translate(659.5059,403.3639)"
+   class="st7 st6"
+   id="text66"
+   style="font-size:11.46580029px;font-family:FiraSansCondensed-BookItalic">Алматы</text>
+
+
+<rect
+   x="448.6"
+   y="431.8"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect68" />
+<text
+   transform="matrix(1 0 0 1 481.4209 440.3639)"
+   class="st7 st6"
+   id="text70">Шымкент</text>
+
+
+<rect
+   x="250.8"
+   y="262.9"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect72" />
+<text
+   transform="matrix(1 0 0 1 276.4472 271.4704)"
+   class="st5 st6"
+   id="text74">Актюбинская</text>
+
+
+<rect
+   x="601.2"
+   y="159.7"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect76" />
+<text
+   transform="matrix(1 0 0 1 624.1563 168.2673)"
+   class="st5 st6"
+   id="text78">Павлодарская</text>
+
+
+<rect
+   x="704.4"
+   y="259.1"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect80" />
+<text
+   transform="matrix(1 0 0 1 737.1006 267.6481)"
+   id="text86"><tspan
+     x="0"
+     y="0"
+     class="st5 st6"
+     id="tspan82">Восточно-</tspan><tspan
+     x="-10.2"
+     y="13.8"
+     class="st5 st6"
+     id="tspan84">Казахстанская</tspan></text>
+
+
+<rect
+   x="106.3"
+   y="212.1"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect88" />
+<text
+   transform="matrix(1 0 0 1 141.4712 220.7038)"
+   id="text94"><tspan
+     x="0"
+     y="0"
+     class="st5 st6"
+     id="tspan90">Западно-</tspan><tspan
+     x="-12.7"
+     y="13.8"
+     class="st5 st6"
+     id="tspan92">Казахстанская</tspan></text>
+
+
+<rect
+   x="494.6"
+   y="273.1"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect96" />
+<text
+   transform="matrix(1 0 0 1 512.6113 281.6364)"
+   class="st5 st6"
+   id="text98">Карагандинская</text>
+
+
+<rect
+   x="345.7"
+   y="356.8"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect100" />
+<text
+   transform="matrix(1 0 0 1 361.3266 365.4254)"
+   class="st5 st6"
+   id="text102">Кызылординская</text>
+
+
+<rect
+   x="150.2"
+   y="392.8"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect104" />
+<text
+   class="st5 st6"
+   id="text106"
+   style="font-size:11.46580029px;font-family:FiraSansCondensed-Book"
+   x="158.97459"
+   y="401.37469">Мангистауская</text>
+
+
+<rect
+   x="115.8"
+   y="293"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect108" />
+<text
+   transform="matrix(1 0 0 1 145.1421 301.5641)"
+   class="st5 st6"
+   id="text110">Атырауская</text>
+
+
+<rect
+   x="616.8"
+   y="360.8"
+   class="st4"
+   width="115.3"
+   height="19.8"
+   id="rect112" />
+<text
+   transform="matrix(1 0 0 1 642.9502 369.3268)"
+   class="st5 st6"
+   id="text114">Алматинская</text>
+
+
+<rect
+   x="523"
+   y="397.4"
+   class="st4"
+   width="115.3"
+   height="39.9"
+   id="rect116" />
+<text
+   transform="matrix(1 0 0 1 546.9365 406.0045)"
+   class="st5 st6"
+   id="text118">Жамбыльская</text>
+
+
+</svg>
