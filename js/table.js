@@ -153,7 +153,6 @@ d3.csv("data/media_dataset.csv", function (error, data) {
     
             d3.selectAll('.region-chart')
                 .on("mouseover", function (d) {
-
                     d3.select(this).style('cursor', 'pointer');
                     //d3.selectAll(".region-chart").style('fill', 'white').style('opacity', '0.7');
                     //d3.select(this).style('fill', 'white').style('opacity', '1');
