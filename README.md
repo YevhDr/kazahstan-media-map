@@ -1,1 +1,0 @@
-# kazahstan-media-map
