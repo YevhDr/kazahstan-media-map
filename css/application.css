@@ -18,6 +18,7 @@ body {
     font-style: italic; }
 
 table {
+  table-layout: fixed;
   margin-bottom: 50px; }
 
 @media (max-width: 800px) {
@@ -28,9 +29,6 @@ thead th {
   text-align: left; }
 thead input {
   text-align: left; }
-
-td:nth-child(1), td:nth-child(3), td:nth-child(4) {
-  width: 30%; }
 
 tbody > tr:nth-child(even) {
   background-color: #b2eff0 !important; }

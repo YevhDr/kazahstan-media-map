@@ -16,7 +16,7 @@ d3.csv("data/media_dataset.csv", function (error, data) {
              tableBody = table.append('tbody');
     
          tableHead.append('tr').selectAll('th')
-             .data(["Название", "Тип", "Собственник", "Контакты"]).enter()
+             .data(["Название", "Тип", "Главный редактор", "Собственник", "Контакты"]).enter()
              .append('th')
              .text(function (d) {
                  return d;
@@ -52,17 +52,17 @@ d3.csv("data/media_dataset.csv", function (error, data) {
                  }
              });
 
-    
          rows.append('td')
              .attr("data-th", "Тип")
              .text(function (d) {
                  return d["ТИП.СМИ"];
              });
-    
-         // rows.append('td')
-         //     .text(function (d) {
-         //         return d["ГОРОД.РАЙОНЫ"];
-         //     });
+
+         rows.append('td')
+             .attr("data-th", "Редактор")
+             .text(function (d) {
+                 return d["ГЛАВНЫЙ.РЕДАКТОР"];
+             });
     
          rows.append('td')
              .attr("data-th", "Владелец")
@@ -82,6 +82,8 @@ d3.csv("data/media_dataset.csv", function (error, data) {
                      "<b>E-mail:</b> " + d["email"] + "<br>"
                      ;
              });
+
+
     
          rows.append('td')
              .text(function (d) {
@@ -108,13 +110,14 @@ d3.csv("data/media_dataset.csv", function (error, data) {
     
          theTable = $('#example').DataTable({
              responsive: true,
+             "order": [[ 0, "desc" ]],
              "pageLength": 10,
              "language": {
                  "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
              },
              "columnDefs": [
                  {
-                     "targets": [ 4 ],
+                     "targets": [ 5 ],
                      "visible": false,
                      "searchable": true
                  }
