@@ -77,7 +77,7 @@ d3.csv("data/media_dataset.csv", function (error, data) {
              .append("div")
                       
              .html(function (d) {
-                 return "<b>Адрес</b>: " + d["ГОРОД.РАЙОНЫ"] + ", " + d["АДРЕС.СМИ"] + "<br>" +
+                 return "<b>Адрес</b>: " + d["ОБЛАСТЬ"] + ", "+ d["ГОРОД.РАЙОНЫ"] + ", " + d["АДРЕС.СМИ"] + "<br>" +
                      "<b>Телефон:</b> " + d["ТЕЛЕФОН"] + "<br>" +
                      "<b>E-mail:</b> " + d["email"] + "<br>"
                      ;
