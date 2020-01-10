@@ -9,6 +9,8 @@ body {
   margin-top: 5vh;
   width: 100%;
   z-index: 0; }
+  #map svg text {
+    pointer-events: none; }
 
 table {
   margin-bottom: 50px; }
