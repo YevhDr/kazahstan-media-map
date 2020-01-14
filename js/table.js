@@ -156,6 +156,10 @@ d3.csv("data/media_dataset.csv", function (error, data) {
                     d3.select(this).style('fill', 'white').style('opacity', '1');
                     selectedRegion = $(this).find("title").text();
                     theTable.search( selectedRegion ).draw();
+                    $([document.documentElement, document.body]).animate({
+                        scrollTop: $("#selected-region").offset().top
+                    }, 1000);
+                    $("#selected-region").html(selectedRegion);
                     //theTable.clear();
                     // var filteredData = theTable
                     //     .column( 4 )
