@@ -5,19 +5,23 @@ body {
   padding: 0;
   background-color: #00CBCC;
   font-family: 'Fira Sans Condensed', sans-serif;
-
 }
 
 h1, h3 {
   text-align: center;
 }
 
+
+//карта
 #map {
   width: 70%;
   z-index: 0;
   margin: 5vh auto auto auto;
 
-    svg {
+  svg {
+    .region {
+      cursor: pointer;
+    }
 
     text {
       font-family: 'Fira Sans Condensed', sans-serif;
@@ -31,11 +35,14 @@ h1, h3 {
   }
 }
 
+//h3 обраний регіон
 #selected-region {
   text-align: center;
   margin-bottom: 25px;
 }
 
+
+//табличка
 table {
   table-layout: fixed;
   margin-bottom: 50px;
@@ -48,17 +55,12 @@ table tr, th, td {
 }
 
 thead {
-
   th {
     text-align: left;
   }
   input {
     text-align: left;
   }
-}
-
-td:nth-child(1), td:nth-child(3), td:nth-child(4) {
-  //width: 30%;
 }
 
 tbody > tr:nth-child(even) {
@@ -73,7 +75,23 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
   background-color: inherit !important;
 }
 
+.web-link {
+  margin-left: 10px;
+  width: 30px;
+  cursor:pointer;
+}
 
+.td-link {
+  display: flex;
+  align-items: center;
+}
+
+.region-chart:hover {
+  fill: white;
+  opacity: 1;
+}
+
+// деякі налаштування для мобільної версії
 @media(max-width: 800px){
   #example_filter {
     background-color: white;
@@ -104,21 +122,9 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
   }
 }
 
-.web-link {
-  margin-left: 10px;
-  width: 30px;
-  cursor:pointer;
-}
 
-.td-link {
-  display: flex;
-  align-items: center;
-}
 
-.region-chart:hover {
-  fill: white;
-  opacity: 1;
-}
+
 
 
 

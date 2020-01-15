@@ -13,6 +13,8 @@ h1, h3 {
   width: 70%;
   z-index: 0;
   margin: 5vh auto auto auto; }
+  #map svg .region {
+    cursor: pointer; }
   #map svg text {
     font-family: 'Fira Sans Condensed', sans-serif;
     pointer-events: none;
@@ -46,6 +48,19 @@ table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.
 table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
   background-color: inherit !important; }
 
+.web-link {
+  margin-left: 10px;
+  width: 30px;
+  cursor: pointer; }
+
+.td-link {
+  display: flex;
+  align-items: center; }
+
+.region-chart:hover {
+  fill: white;
+  opacity: 1; }
+
 @media (max-width: 800px) {
   #example_filter {
     background-color: white;
@@ -69,17 +84,5 @@ table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column
 
   .flex-mobile {
     display: flex; } }
-.web-link {
-  margin-left: 10px;
-  width: 30px;
-  cursor: pointer; }
-
-.td-link {
-  display: flex;
-  align-items: center; }
-
-.region-chart:hover {
-  fill: white;
-  opacity: 1; }
 
 /*# sourceMappingURL=application.css.map */
