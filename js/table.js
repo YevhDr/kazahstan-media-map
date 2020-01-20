@@ -87,39 +87,92 @@ d3.csv("data/media_dataset.csv", function (error, data) {
              });    
     
     
-        //додаємо пошук по кожній колонці (з data-table official)
-        $('#example thead tr').clone(true).appendTo( '#example thead' );
-        $('#example thead tr:eq(1) th').each( function (i) {
-             var title = $(this).text();
-             $(this).html( '<input type="text" placeholder="Поиск" />' );
-    
-             $( 'input', this ).on( 'keyup change', function () {
-                 if ( theTable.column(i).search() !== this.value ) {
-                     theTable
-                         .column(i)
-                         .search( this.value )
-                         .draw();
-                 }
-             });
-        });
-    
+        // //додаємо пошук по кожній колонці (з data-table official)
+        // $('#example thead tr').clone(true).appendTo( '#example thead' );
+        // $('#example thead tr:eq(1) th').each( function (i) {
+        //      var title = $(this).text();
+        //      $(this).html( '<input type="text" placeholder="Поиск" />' );
+        //
+        //      $( 'input', this ).on( 'keyup change', function () {
+        //          if ( theTable.column(i).search() !== this.value ) {
+        //              theTable
+        //                  .column(i)
+        //                  .search( this.value )
+        //                  .draw();
+        //          }
+        //      });
+        // });
+
+
         //налаштування для таблиці - мова, порядок сортування, довжина, приховані колонки
         theTable = $('#example').DataTable({
-             responsive: true,
-             "order": [[ 0, "desc" ]],
-             "pageLength": 10,
-             "language": {
-                 "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
-             },
-             "columnDefs": [
-                 {
-                     "targets": [ 5 ],
-                     "visible": false,
-                     "searchable": true
-                 }
-             ]
+            responsive: true,
+            "order": [[ 0, "desc" ]],
+            "pageLength": 10,
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
+            },
+            "columnDefs": [
+                {
+                    "targets": [ 5 ],
+                    "visible": false,
+                    "searchable": true
+                }
+            ]
         });
+
+
+        //додаємо пошук по кожній колонці (з data-table official)
+        $('#example thead tr').clone(true).appendTo( '#example thead' );
+        $('#example thead tr:eq(1) th:eq(0), ' +
+            '#example thead tr:eq(1) th:eq(2), ' +
+            '#example thead tr:eq(1) th:eq(3), ' +
+            '#example thead tr:eq(1) th:eq(4)')
+            .each(function (i) {
+            $(this).html( '<input type="text" placeholder="Поиск" />' );
+            $( 'input', this ).on( 'keyup change', function () {
+                if ( theTable.column(i).search() !== this.value ) {
+                    theTable
+                        .column(i)
+                        .search( this.value )
+                        .draw();
+                }
+            });
+        });
+
+
+
+
+        //select option  в другу колонку
+        $('#example thead tr:eq(1) th:eq(1)').each(function (i) {
+                var column = this;
+                var select = $('<select><option value="" disabled selected>выбрать</option></select>');
+                $(this).html( select );
+
+                $( 'select', this ).on( 'change', function () {
+                    var val = $.fn.dataTable.util.escapeRegex(
+                        $(this).val()
+                    );
+                    console.log(val);
+
+                        theTable
+                            .column(1)
+                            .search( this.value )
+                            .draw();
+                });
+
+
+
+            theTable.column( 1 ).data().unique().each( function ( d, j ) {
+                select.append( '<option value="'+d+'">'+d+'</option>' )
+            });
+
+
+        });
+
      };
+
+
     
     //Намалювати таблицю
     drawT(data);

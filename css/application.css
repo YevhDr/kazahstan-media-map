@@ -84,5 +84,7 @@ table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column
 
   .flex-mobile {
     display: flex; } }
+select {
+  width: 50%; }
 
 /*# sourceMappingURL=application.css.map */
