@@ -54,12 +54,10 @@ table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column
   background-color: inherit !important; }
 
 .web-link {
-  margin-left: 10px;
-  width: 30px;
+  font-size: 14px;
   cursor: pointer; }
 
 .td-link {
-  display: flex;
   align-items: center; }
 
 .region-chart:hover {

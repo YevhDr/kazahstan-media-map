@@ -31,26 +31,48 @@ d3.csv("data/media_dataset.csv", function (error, data) {
              });
     
         //додаємо іконку-вказівник сайту, лінк для переходу і курсор-поінтер тільки якщо є сайт
-        rows.append('td')
+
+        const firstColumn = rows.append('td')
              .attr("class", "td-link")
-             .attr("onclick", function(d) {
-                 if(d['web'].length > 0) {
-                     return "window.open('" + d["web"] + "', '_blank')"
-                 }
-             })
-             .attr("data-th", "Название")
-             .html(function (d) {
-                 if(d['web'].length > 0) {
-                     return "<p>" + d["НАЗВАНИЕ.СМИ"] + "</p><img class='web-link' src='img/web.svg'/>";
-                 } else {
-                     return "<p>" + d["НАЗВАНИЕ.СМИ"]
-                 }
-             })
+             // .attr("onclick", function(d) {
+             //     if(d['web'].length > 0) {
+             //         return "window.open('" + d["web"] + "', '_blank')"
+             //     }
+             // })
+             .attr("data-th", "Название");
+
+        
+        firstColumn
+            .append("p")
+            .html(function (d) { return d["НАЗВАНИЕ.СМИ"]; });
+
+        firstColumn.append("p")
+            .text(function (d) { return d['web']; })
+            .attr('class', 'web-link')
+            // .attr("src", function (d) {
+            //        if(d['web'].length > 0) {
+            //            return 'img/web.svg';
+            //        }
+            //  })
+            .attr("onclick", function (d) {
+                if(d['web'].length > 0) {
+                    return "window.open('" +d.web +"', '_blank')"
+
+                }
+            })
+            // .html(function (d) {
+            //      if(d['web'].length > 0) {
+            //          return "<p>" + d["НАЗВАНИЕ.СМИ"] + "</p><img class='web-link' src='img/web.svg' onclick=" + "window.open('" +d.web + "', '_blank')" + "/>";
+            //      } else {
+            //          return "<p>" + d["НАЗВАНИЕ.СМИ"]
+            //      }
+            //  })
              .style("cursor", function(d) {
                  if(d['web'].length > 0) {
                      return "pointer"
                  }
-             });
+             })
+        ;
     
         rows.append('td')
              .attr("data-th", "Тип")
@@ -76,7 +98,9 @@ d3.csv("data/media_dataset.csv", function (error, data) {
              .attr("class", "flex-mobile")
              .append("div")                      
              .html(function (d) {
-                 return "<b>Адрес</b>: " + d["ОБЛАСТЬ"] + ", "+ d["ГОРОД.РАЙОНЫ"] + ", " + d["АДРЕС.СМИ"] + "<br>" +
+                 return "<b>Адрес</b>: " +
+                     d["ОБЛАСТЬ"] + ", "+
+                     d["ГОРОД.РАЙОНЫ"] + ", " + d["АДРЕС.СМИ"] + "<br>" +
                      "<b>Телефон:</b> " + d["ТЕЛЕФОН"] + "<br>" +
                      "<b>E-mail:</b> " + d["email"] + "<br>";
              });
