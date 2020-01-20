@@ -60,6 +60,8 @@ thead {
   }
   input {
     text-align: left;
+    font-family: 'Fira Sans Condensed', sans-serif;
+
   }
 }
 
@@ -122,8 +124,17 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
   }
 }
 
+
+
 select {
+  font-family: 'Fira Sans Condensed', sans-serif;
   width: 50%;
+  background-color: white;
+  color: grey;
+}
+
+option:not(:first-of-type) {
+  color: black;
 }
 
 

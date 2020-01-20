@@ -37,7 +37,8 @@ table {
 thead th {
   text-align: left; }
 thead input {
-  text-align: left; }
+  text-align: left;
+  font-family: 'Fira Sans Condensed', sans-serif; }
 
 tbody > tr:nth-child(even) {
   background-color: #b2eff0 !important; }
@@ -85,6 +86,12 @@ table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column
   .flex-mobile {
     display: flex; } }
 select {
-  width: 50%; }
+  font-family: 'Fira Sans Condensed', sans-serif;
+  width: 50%;
+  background-color: white;
+  color: grey; }
+
+option:not(:first-of-type) {
+  color: black; }
 
 /*# sourceMappingURL=application.css.map */
