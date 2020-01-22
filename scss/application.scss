@@ -49,8 +49,22 @@ h1 {
 
 //табличка
 table {
-  table-layout: fixed;
+  //table-layout: fixed;
   margin-bottom: 50px;
+}
+
+table td:nth-child(1) {
+  width: 20%;
+}
+
+table td:nth-child(2),
+table td:nth-child(3),
+table td:nth-child(4) {
+  width: 15%;
+}
+
+table td:nth-child(5) {
+  width: 35% ;
 }
 
 table tr, th, td {
@@ -84,19 +98,27 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
 
 .web-link {
   font-size: 14px;
-  //margin-left: 10px;
-  //width: 30px;
   cursor:pointer;
 }
 
 .td-link {
-  //display: flex;
   align-items: center;
 }
 
 .region-chart:hover {
   fill: white;
   opacity: 1;
+}
+
+//input показувати 10/25/50 записів на сторінку
+#example_length {
+  min-width: 300px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+#example_filter {
+  display: none;
 }
 
 // деякі налаштування для мобільної версії
@@ -108,15 +130,25 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
     margin: 0;
     position: fixed;
     top: 0;
+    display: block;
   }
 
   thead {
     display: none;
   }
 
-  td:nth-child(1), td:nth-child(3), td:nth-child(4) {
+
+  table td {
     width: 90%;
   }
+
+
+  td {
+    p {
+      margin: 0;
+    }
+  }
+
 
   td:before {
     content: attr(data-th) ": ";
@@ -142,6 +174,8 @@ select {
 option:not(:first-of-type) {
   color: black;
 }
+
+
 
 
 

@@ -39,9 +39,11 @@ d3.csv("data/media_dataset.csv", function (error, data) {
              //         return "window.open('" + d["web"] + "', '_blank')"
              //     }
              // })
-             .attr("data-th", "Название");
+             .attr("data-th", "Название")
+            .attr("class", "flex-mobile")
+            .append("div");
 
-        
+
         firstColumn
             .append("p")
             .html(function (d) { return d["НАЗВАНИЕ.СМИ"]; });
@@ -76,12 +78,14 @@ d3.csv("data/media_dataset.csv", function (error, data) {
     
         rows.append('td')
              .attr("data-th", "Тип")
+             .attr("class", "flex-mobile")
              .text(function (d) {
                  return d["ТИП.СМИ"];
              });
     
         rows.append('td')
              .attr("data-th", "Редактор")
+             .attr("class", "flex-mobile")
              .text(function (d) {
                  return d["ГЛАВНЫЙ.РЕДАКТОР"];
              });
@@ -100,9 +104,7 @@ d3.csv("data/media_dataset.csv", function (error, data) {
              .html(function (d) {
                  return "<b>Адрес</b>: " +
                      d["ОБЛАСТЬ"] + ", "+
-                     d["ГОРОД.РАЙОНЫ"] + ", " + d["АДРЕС.СМИ"] + "<br>" +
-                     "<b>Телефон:</b> " + d["ТЕЛЕФОН"] + "<br>" +
-                     "<b>E-mail:</b> " + d["email"] + "<br>";
+                     d["ГОРОД.РАЙОНЫ"] + ", " + d["АДРЕС.СМИ"] + " <b>Телефон:</b> " + d["ТЕЛЕФОН"] + "<b> E-mail:</b> " + d["email"] + "<br>";
              });
      
         rows.append('td')
@@ -186,7 +188,6 @@ d3.csv("data/media_dataset.csv", function (error, data) {
                 });
 
 
-
             theTable.column( 1 ).data().unique().each( function ( d, j ) {
                 select.append( '<option value="'+d+'">'+d+'</option>' )
             });
@@ -217,19 +218,12 @@ d3.csv("data/media_dataset.csv", function (error, data) {
         svg.selectAll("path")
             .classed("region-chart", true);
         
-        d3.selectAll('.region-chart').on("click", function(d){
-                
-            d3.selectAll(".region-chart")
-                    .style('fill', 'white')
-                    .style('opacity', '0.7');                
-                
-            d3.select(this).style('fill', 'white')
-                .style('opacity', '1'); 
+        d3.selectAll('.region-chart').on("click", function(d){                
+            d3.selectAll(".region-chart").style('fill', 'white').style('opacity', '0.7');                  
+            d3.select(this).style('fill', 'white').style('opacity', '1'); 
             selectedRegion = $(this).find("title").text();
-            theTable.search( selectedRegion ).draw();               
-            
-            $([document.documentElement, document.body]).animate({ scrollTop: $("#selected-region").offset().top}, 1000);  //прокрутка до таблички на клік
-            
+            theTable.search( selectedRegion ).draw();            
+            $([document.documentElement, document.body]).animate({ scrollTop: $("#selected-region").offset().top}, 1000);  //прокрутка до таблички на клік            
             $("#selected-region").html(selectedRegion);                    
         });
 
