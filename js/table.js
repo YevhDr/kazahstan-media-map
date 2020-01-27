@@ -203,7 +203,7 @@ d3.csv("data/media_dataset.csv", function (error, data) {
     drawT(data);
    
     //Приєдуємо svg-карту і таблицю
-    d3.xml("img/map_alone.svg").mimeType("image/svg+xml").get(function (error, xml) {  
+    d3.xml("img/map2.svg").mimeType("image/svg+xml").get(function (error, xml) {  
         if (error) {  throw error }
         
         d3.select("#map").node().appendChild(xml.documentElement);
@@ -218,13 +218,24 @@ d3.csv("data/media_dataset.csv", function (error, data) {
         svg.selectAll("path")
             .classed("region-chart", true);
         
-        d3.selectAll('.region-chart').on("click", function(d){                
-            d3.selectAll(".region-chart").style('fill', 'white').style('opacity', '0.7');                  
-            d3.select(this).style('fill', 'white').style('opacity', '1'); 
+        d3.selectAll('.region-chart').on("click", function(d){
+            d3.selectAll("circle").style('fill', '#c7edff').style('opacity', '1');
+            d3.selectAll(".region-chart").style('fill', '#8493e7').style('opacity', '1');
+            d3.select(this).style('fill', '#d075db').style('opacity', '1');
             selectedRegion = $(this).find("title").text();
             theTable.search( selectedRegion ).draw();            
             $([document.documentElement, document.body]).animate({ scrollTop: $("#selected-region").offset().top}, 1000);  //прокрутка до таблички на клік            
             $("#selected-region").html(selectedRegion);                    
+        });
+
+        d3.selectAll('circle').on("click", function(d){
+            d3.selectAll("circle").style('fill', '#c7edff').style('opacity', '1');
+            d3.selectAll(".region-chart").style('fill', '#8493e7').style('opacity', '1');
+            d3.select(this).style('fill', '#d075db').style('opacity', '1');
+            selectedRegion = $(this).find("title").text();
+            theTable.search( selectedRegion ).draw();
+            $([document.documentElement, document.body]).animate({ scrollTop: $("#selected-region").offset().top}, 1000);  //прокрутка до таблички на клік
+            $("#selected-region").html(selectedRegion);
         });
 
     });
