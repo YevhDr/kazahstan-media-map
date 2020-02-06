@@ -209,7 +209,6 @@ d3.csv("data/media_dataset.csv", function (error, data) {
         d3.select("#map").node().appendChild(xml.documentElement);
 
         var svg = d3.select("#map svg")
-            .attr("width", width)
             .attr("width", width);
         
         svg.selectAll("polygon")
