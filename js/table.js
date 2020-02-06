@@ -155,7 +155,7 @@ d3.csv("data/media_dataset.csv", function (error, data) {
         //select option  в другу колонку
         $('#example thead tr:eq(1) th:eq(1)').each(function (i) {
                 var column = this;
-                var select = $('<select><option value="" disabled selected>Выбрать</option></select>');
+                var select = $('<select><option value="" selected></option></select>');
                 $(this).html( select );
 
                 $( 'select', this ).on( 'change', function () {
