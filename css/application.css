@@ -215,5 +215,21 @@ footer {
   color: black;
   width: max-content;
   margin: 50px auto; }
+  #created_texty i {
+    text-align: center;
+    box-sizing: content-box;
+    margin: 0.5em;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #1e3f80;
+    color: #1e3f80;
+    border-radius: 50%;
+    padding: 0.5em;
+    font-size: 2.0em;
+    line-height: 1; }
+    #created_texty i:hover {
+      border: 1px solid #d075db;
+      color: #d075db; }
 
 /*# sourceMappingURL=application.css.map */

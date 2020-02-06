@@ -303,6 +303,28 @@ footer {
   color: black;
   width: max-content;
   margin: 50px auto;
+
+  i {
+    text-align: center;
+    box-sizing: content-box;
+    margin: 0.5em;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    border: 1px solid $main-blue;
+    color: $main-blue;
+    border-radius: 50%;
+    padding: 0.5em;
+    font-size: 2.0em;
+    line-height: 1;
+    //transition: all 0.5s;
+
+    &:hover {
+      //border: 1px solid lighten(grey, 15%);
+      border: 1px solid #d075db;
+      color: #d075db;
+    }
+  }
 }
 
 
