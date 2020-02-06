@@ -1,3 +1,5 @@
+$(window).on('load', function() {
+
 var selectedRegion;
 var theTable;
 var width = "90%",
@@ -34,14 +36,9 @@ d3.csv("data/media_dataset.csv", function (error, data) {
 
         const firstColumn = rows.append('td')
              .attr("class", "td-link")
-             // .attr("onclick", function(d) {
-             //     if(d['web'].length > 0) {
-             //         return "window.open('" + d["web"] + "', '_blank')"
-             //     }
-             // })
              .attr("data-th", "Название")
-            .attr("class", "flex-mobile")
-            .append("div");
+             .attr("class", "flex-mobile")
+             .append("div");
 
 
         firstColumn
@@ -51,24 +48,11 @@ d3.csv("data/media_dataset.csv", function (error, data) {
         firstColumn.append("p")
             .text(function (d) { return d['web']; })
             .attr('class', 'web-link')
-            // .attr("src", function (d) {
-            //        if(d['web'].length > 0) {
-            //            return 'img/web.svg';
-            //        }
-            //  })
             .attr("onclick", function (d) {
                 if(d['web'].length > 0) {
                     return "window.open('" +d.web +"', '_blank')"
-
                 }
             })
-            // .html(function (d) {
-            //      if(d['web'].length > 0) {
-            //          return "<p>" + d["НАЗВАНИЕ.СМИ"] + "</p><img class='web-link' src='img/web.svg' onclick=" + "window.open('" +d.web + "', '_blank')" + "/>";
-            //      } else {
-            //          return "<p>" + d["НАЗВАНИЕ.СМИ"]
-            //      }
-            //  })
              .style("cursor", function(d) {
                  if(d['web'].length > 0) {
                      return "pointer"
@@ -110,42 +94,26 @@ d3.csv("data/media_dataset.csv", function (error, data) {
         rows.append('td')
              .text(function (d) {
                  return d["ОБЛАСТЬ"];
-             });    
-    
-    
-        // //додаємо пошук по кожній колонці (з data-table official)
-        // $('#example thead tr').clone(true).appendTo( '#example thead' );
-        // $('#example thead tr:eq(1) th').each( function (i) {
-        //      var title = $(this).text();
-        //      $(this).html( '<input type="text" placeholder="Поиск" />' );
-        //
-        //      $( 'input', this ).on( 'keyup change', function () {
-        //          if ( theTable.column(i).search() !== this.value ) {
-        //              theTable
-        //                  .column(i)
-        //                  .search( this.value )
-        //                  .draw();
-        //          }
-        //      });
-        // });
+             });
 
-
+    
         //налаштування для таблиці - мова, порядок сортування, довжина, приховані колонки
-        theTable = $('#example').DataTable({
-            responsive: true,
-            "order": [[ 0, "desc" ]],
-            "pageLength": 10,
-            "language": {
-                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
-            },
-            "columnDefs": [
-                {
-                    "targets": [ 5 ],
-                    "visible": false,
-                    "searchable": true
-                }
-            ]
-        });
+            theTable = $('#example').DataTable({
+                responsive: true,
+                "order": [[0, "desc"]],
+                "pageLength": 10,
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
+                },
+                "columnDefs": [
+                    {
+                        "targets": [5],
+                        "visible": false,
+                        "searchable": true
+                    }
+                ]
+            });
+
 
 
         //додаємо пошук по кожній колонці (з data-table official)
@@ -243,7 +211,7 @@ d3.csv("data/media_dataset.csv", function (error, data) {
 });
 
 
-
+});
 
 
 

@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #c7edff;
   font-family: 'Fira Sans Condensed', sans-serif;
+  color: #1e3f80;
 }
 
 header {
@@ -25,6 +26,11 @@ h1 {
   color: #1e3f80;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 50px;
+  @media(max-width: 800px){
+    width: 50%;
+    font-size: 30px;
+    text-align: left;
+  }
 
 }
 
@@ -33,12 +39,21 @@ h1 {
   margin-right: 10px;
 }
 
+
+main {
+  width: 90%;
+  max-width: 1600px;
+  margin: auto;
+}
+
 //карта
 #map {
+  min-height: 500px;
   width: 70%;
   z-index: 0;
   margin: 5vh auto auto auto;
   @media(max-width: 800px){
+    min-height: 50px;
     width: 90%;
     margin: auto;
   }
@@ -71,7 +86,7 @@ h1 {
 //табличка
 
 #example_wrapper {
-  width: 90%;
+ // width: 90%;
   margin: auto;
 }
 
@@ -249,6 +264,12 @@ footer {
   p {
     text-align: center;
   }
+}
+
+#created_texty {
+  color: black;
+  width: max-content;
+  margin: 50px auto;
 }
 
 

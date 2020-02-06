@@ -4,7 +4,8 @@ body {
   margin: 0 auto;
   padding: 0;
   background-color: #c7edff;
-  font-family: 'Fira Sans Condensed', sans-serif; }
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #1e3f80; }
 
 header {
   margin-top: 40px;
@@ -22,17 +23,29 @@ h1 {
   color: #1e3f80;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 50px; }
+  @media (max-width: 800px) {
+    h1 {
+      width: 50%;
+      font-size: 30px;
+      text-align: left; } }
 
 #main-logo {
   width: 100px;
   margin-right: 10px; }
 
+main {
+  width: 90%;
+  max-width: 1600px;
+  margin: auto; }
+
 #map {
+  min-height: 500px;
   width: 70%;
   z-index: 0;
   margin: 5vh auto auto auto; }
   @media (max-width: 800px) {
     #map {
+      min-height: 50px;
       width: 90%;
       margin: auto; } }
   #map svg .region, #map svg circle {
@@ -50,7 +63,6 @@ h1 {
   margin-bottom: 25px; }
 
 #example_wrapper {
-  width: 90%;
   margin: auto; }
 
 table {
@@ -175,5 +187,10 @@ footer {
       border: 1px solid #c7edff; }
   footer p {
     text-align: center; }
+
+#created_texty {
+  color: black;
+  width: max-content;
+  margin: 50px auto; }
 
 /*# sourceMappingURL=application.css.map */
