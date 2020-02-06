@@ -7,18 +7,31 @@ body {
   font-family: 'Fira Sans Condensed', sans-serif;
 }
 
-h1, h3 {
-  text-align: center;
-}
-
-h1 {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 50px;
+header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media(max-width: 800px){
     margin-top: 100px;
   }
 }
 
+h1, h3 {
+  text-align: center;
+}
+
+h1 {
+  color: #1e3f80;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 50px;
+
+}
+
+#main-logo {
+  width: 100px;
+  margin-right: 10px;
+}
 
 //карта
 #map {
@@ -26,7 +39,8 @@ h1 {
   z-index: 0;
   margin: 5vh auto auto auto;
   @media(max-width: 800px){
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   svg {
@@ -55,6 +69,12 @@ h1 {
 
 
 //табличка
+
+#example_wrapper {
+  width: 90%;
+  margin: auto;
+}
+
 table {
   //table-layout: fixed;
   margin-bottom: 50px;
@@ -152,6 +172,7 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
     margin: 0;
     position: fixed;
     top: 0;
+    left:0;
     display: block;
   }
 
@@ -204,6 +225,30 @@ select {
 
 option:not(:first-of-type) {
   color: black;
+}
+
+footer {
+  width: 80%;
+  margin: 50px auto;
+
+  div#donors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px auto;
+    width: 80%;
+
+    img {
+      margin-right: 20px;
+      height: 80px;
+      border: 1px solid #c7edff
+    }
+  }
+
+  p {
+    text-align: center;
+  }
 }
 
 

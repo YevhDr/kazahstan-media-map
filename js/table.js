@@ -1,6 +1,6 @@
 var selectedRegion;
 var theTable;
-var width = "100%",
+var width = "90%",
     height = 600;
 
 
@@ -209,7 +209,8 @@ d3.csv("data/media_dataset.csv", function (error, data) {
         d3.select("#map").node().appendChild(xml.documentElement);
 
         var svg = d3.select("#map svg")
-            .attr("width", width);
+            .attr("width", width)
+            .style("margin", "auto");
         
         svg.selectAll("polygon")
             .classed("region-chart", true);
