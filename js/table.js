@@ -118,14 +118,12 @@ d3.csv("data/media_dataset.csv", function (error, data) {
 
         //додаємо пошук по кожній колонці (з data-table official)
         $('#example thead tr').clone(true).appendTo( '#example thead' );
-        $('#example thead tr:eq(1) th:eq(0), ' +
-            '#example thead tr:eq(1) th:eq(2), ' +
-            '#example thead tr:eq(1) th:eq(3), ' +
-            '#example thead tr:eq(1) th:eq(4)')
+
+        $('#example thead tr:eq(1) th:eq(0)')
             .each(function (i) {
             $(this).html( '<input type="text" placeholder="Поиск" />' );
             $( 'input', this ).on( 'keyup change', function () {
-                if ( theTable.column(i).search() !== this.value ) {
+                if (theTable.column(i).search() !== this.value ) {
                     theTable
                         .column(i)
                         .search( this.value )
@@ -133,6 +131,23 @@ d3.csv("data/media_dataset.csv", function (error, data) {
                 }
             });
         });
+
+        $('#example thead tr:eq(1) th:eq(2), ' +
+            '#example thead tr:eq(1) th:eq(3), ' +
+            '#example thead tr:eq(1) th:eq(4)')
+            .each(function (i) {
+                $(this).html( '<input type="text" placeholder="Поиск" />' );
+                $( 'input', this ).on( 'keyup change', function () {
+                    if (theTable.column(i+2).search() !== this.value ) {
+                        theTable
+                            .column(i+2)
+                            .search( this.value )
+                            .draw();
+                    }
+                });
+            });
+
+
 
 
 
