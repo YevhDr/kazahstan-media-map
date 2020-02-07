@@ -5,8 +5,9 @@ var theTable;
 var width = "90%",
     height = 600;
 
+d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSiPUM6bBAAVjW3MTbXaqkOrwaSSmuN9KqIl5sfGn-oL_pd71JY-O53jmyrh0IepCidecz4SmQrLop4/pub?gid=1148562809&single=true&output=csv", function(error, data){
 
-d3.csv("data/media_dataset.csv", function (error, data) {
+// d3.csv("data/media_dataset.csv", function (error, data) {
     if (error) throw error;
     var table;
     
