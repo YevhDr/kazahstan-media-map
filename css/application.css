@@ -160,8 +160,11 @@ table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column
     left: 0;
     display: block; }
 
-  thead {
+  thead tr:nth-child(1) {
     display: none; }
+
+  table.dataTable thead th, table.dataTable thead td {
+    padding: 8px 10px !important; }
 
   table td:nth-child(1) {
     width: 90%; }
@@ -178,6 +181,12 @@ table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column
     margin: 0; }
 
   td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    min-width: 120px !important;
+    display: inline-block; }
+
+  th:before {
     content: attr(data-th) ": ";
     font-weight: bold;
     min-width: 120px !important;

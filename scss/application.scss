@@ -225,8 +225,16 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
   }
 
   thead {
-    display: none;
+    tr:nth-child(1) {
+      display: none;
+    }
   }
+
+    table.dataTable thead th, table.dataTable thead td {
+      padding: 8px 10px !important;
+    }
+
+
 
 
   table td:nth-child(1) {
@@ -251,6 +259,13 @@ table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.s
 
 
   td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    min-width: 120px !important;
+    display: inline-block;
+  }
+
+  th:before {
     content: attr(data-th) ": ";
     font-weight: bold;
     min-width: 120px !important;

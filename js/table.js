@@ -22,6 +22,13 @@ d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSiPUM6bBAAVjW3MTbXaqkOr
         tableHead.append('tr').selectAll('th')
              .data(["Название", "Тип", "Главный редактор", "Собственник", "Контакты"]).enter()
              .append('th')
+             .attr("data-th",function (d) {
+                     if(d === "Главный редактор") {
+                         return "Редактор";
+                     } else {
+                         return d
+                     }
+             })
              .text(function (d) { return d; });
 
         //table body
