@@ -57,6 +57,7 @@ d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTLRN1EN_DljnDSWFpo8Xa-H
             .text(function (d) { return d['web']; })
             .attr('class', 'web-link')
             .attr("onclick", function (d) {
+                console.log(d['web']);
                 if(d['web'].length > 0) {
                     return "window.open('" +d.web +"', '_blank')"
                 }
